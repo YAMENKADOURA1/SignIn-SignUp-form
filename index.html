@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>SingIn Page</title>
+  </head>
+  <body>
+    <div class="section">
+      <div class="form-box sign-in front">
+        <form action="">
+          <h2>Login</h2>
+          <div class="input-box">
+            <i class="bi bi-envelope"></i>
+            <input type="email" id="email" required>
+            <label for="email" >Email Address</label>
+          </div>
+          <div class="input-box">
+            <i class="bi bi-lock-fill lock"></i>
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+          </div>
+          <div class="rembember-box mb-4">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+            <a href="">Forget Password</a>
+          </div>
+          <button type="submit" class="login-btn mb-3" id="signIn">Login</button>
+          <div class="register-link">
+            <p>Don't have an account? <a href="#" id="register">Register</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box sign-up back">
+        <form action="">
+          <h2>Sign Up</h2>
+          <div class="input-box">
+            <i class="bi bi-person-vcard-fill"></i>
+            <input type="text" id="fullname" required minlength="5">
+            <label for="fullname" >Full Name</label>
+          </div>
+          <div class="input-box">
+            <i class="bi bi-lock-fill"></i>
+            <input type="email" id="email-address" required>
+            <label for="email-address">Email Address</label>
+          </div>
+          <div class="input-box">
+            <i class="bi bi-lock-fill lock"></i>
+            <input type="password" id="newpassword" required minlength="10">
+            <label for="newpassword">Create Password</label>
+          </div>
+          <div class="input-box">
+            <i class="bi bi-lock-fill lock"></i>
+            <input type="password" id="confirmpass" required>
+            <label for="confirmpass">Confirm Password</label>
+          </div>
+          <div class="rembember-box mb-4">
+            <input type="checkbox" id="agree-box">
+            <label for="remember-me">I agree to the terms & conditions</label>
+          </div>
+          <button type="submit" class="login-btn mb-3" id="create-account">Create account</button>
+          <div class="register-link">
+            <p>Already have account ? <a href="#" id="login">Login</a></p>
+          </div>
+        </form>
+
+       </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup">
+      <i class="bi bi-x-lg close-btn"></i>
+      <p class="text-center">You Are Create your Account</p>
+    </div>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</html>
